@@ -1,0 +1,8 @@
+1. Unidades que estoy comprando
+2. Nombre del producto
+3. Imágen del producto
+4. Precio del producto
+5. Total de la compra
+6. Si quiero agregar más o quitar Unidades
+7. Si quiero ELIMINAR un producto del carrito
+8. boton de comprar

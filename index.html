@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluffy Store - Tienda de Peluches</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="./img/fluffy_store_logo_1773800734887.png" alt="Fluffy Store Logo" class="logo-img">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+                <!-- Cart Icon Ready for JS -->
+                <a href="#" class="cart-icon" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero" id="inicio" style="background-image: url('./img/hero_banner_background_1773800749766.png');">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="bounce-in">¡La tienda de peluches más tierna!</h1>
+                    <p class="fade-in">Encuentra a tu nuevo mejor amigo. Nuestros peluches son suavecitos, coloridos y llenos de amor.</p>
+                    <a href="#productos" class="cta-button pulse">Ver Peluches</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="wpp-fixed float-animation">
+        <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-section padding-section" id="nosotros">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <div class="about-container">
+            <div class="about-card zoom-on-hover">
+                <h3>¿Quiénes Somos?</h3>
+                <p>En <strong>Fluffy Store</strong> creemos que un abrazo puede cambiar tu día. Por eso seleccionamos los peluches más hermosos y suaves del universo. Cada peluche está esperando a que le des un hogar lleno de amor y diversión.</p>
+            </div>
+            <div class="about-card zoom-on-hover">
+                <h3>Sucursales Mágicas</h3>
+                <ul class="locations-list">
+                    <li><i class="fas fa-star"></i> Nube Rosa (Sede Central)</li>
+                    <li><i class="fas fa-star"></i> Valle Arcoíris</li>
+                    <li><i class="fas fa-star"></i> Bosque Encantado</li>
+                    <li><i class="fas fa-star"></i> Ciudad Chicle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="products-section padding-section" id="productos">
+        <h2 class="section-title">Nuestros Peluches</h2>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_bunny_1773800765977.png" alt="Conejo de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Conejito Algodón</h3>
+                    <p>Un conejito rosa y blanco, ideal para abrazos suaves.</p>
+                    <p class="product-price">$8.500</p>
+                    <div class="product-actions" data-product-id="1">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_bear_1773800791282.png" alt="Oso de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Osito Morita</h3>
+                    <p>Osito lila súper adorable. Perfecto para dormir.</p>
+                    <p class="product-price">$9.200</p>
+                    <div class="product-actions" data-product-id="2">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_unicorn_1773800805642.png" alt="Unicornio de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Unicornio Arcoíris</h3>
+                    <p>Lleva la magia a tu cuarto con este unicornio brillante.</p>
+                    <p class="product-price">$12.000</p>
+                    <div class="product-actions" data-product-id="3">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_dino_1773800829894.png" alt="Dinosaurio de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Dino Menta</h3>
+                    <p>Un dinosaurio amigable al que no le gusta asustar.</p>
+                    <p class="product-price">$10.500</p>
+                    <div class="product-actions" data-product-id="4">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_kitty_1773800844140.png" alt="Gatito de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Gatito Sol</h3>
+                    <p>Pequeño gatito amarillo que te alegrará el día.</p>
+                    <p class="product-price">$7.800</p>
+                    <div class="product-actions" data-product-id="5">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="./img/plushie_doggy_1773800859784.png" alt="Perrito de Peluche">
+                </div>
+                <div class="product-info">
+                    <h3>Perrito Nube</h3>
+                    <p>El cachorro más leal y suavecito de todos.</p>
+                    <p class="product-price">$8.900</p>
+                    <div class="product-actions" data-product-id="6">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer padding-section" id="contacto">
+        <h2 class="section-title text-white">¡No te quedes sin tu peluche!</h2>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="footer-text">© 2026 Fluffy Store. Todos los derechos mágicos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script that you will develop later in class in JS -->
+    <!-- <script src="./js/main.js"></script> -->
+</body>
+</html>
