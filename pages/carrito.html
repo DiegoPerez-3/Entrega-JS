@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Fluffy Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="navbar">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../img/fluffy_store_logo_1773800734887.png" alt="Fluffy Store Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#nosotros">Nosotros</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../index.html#contacto">Contacto</a>
+                <!-- Cart Icon -->
+                <a href="#" class="cart-icon active" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shopping Cart Section -->
+    <section class="cart-section padding-section">
+        <h2 class="section-title">Tu Carrito de Abrazos</h2>
+
+        <div class="cart-container">
+            <!-- Table of Items (Example data for JS practice) -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+                    <!-- Dinámicamente generado por cart.js -->
+                </tbody>
+            </table>
+
+            <!-- Summary Section -->
+            <div class="cart-summary">
+                <p>Total a pagar:</p>
+                <p class="total-price" id="total-cart">$0</p>
+                <button class="checkout-btn" id="finish-purchase">Finalizar Compra</button>
+                <a href="../index.html#productos" style="margin-top: 10px; color: var(--accent-color); font-weight: 600;">Seguir Comprando</a>
+            </div>
+        </div>
+
+        <!-- Message for empty cart (hidden by default) -->
+        <div class="empty-cart-msg" id="empty-cart">
+            <i class="fas fa-shopping-basket" style="font-size: 4rem; color: var(--info-color); margin-bottom: 1rem;"></i>
+            <h3>¡Tu carrito está vacío!</h3>
+            <p>Parece que aún no tienes ningún peluche para abrazar.</p>
+            <a href="../index.html#productos" class="cta-button" style="margin-top: 2rem;">Ir a la Tienda</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer padding-section" id="contacto">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="footer-text">© 2026 Fluffy Store. Todos los derechos mágicos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="../js/cart.js"></script>
+</body>
+</html>
