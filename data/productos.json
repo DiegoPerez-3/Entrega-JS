@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Conejito Algodón",
+        "descripcion": "Un conejito blanco y extra suave para abrazar fuerte.",
+        "precio": 8500,
+        "imagen": "./img/plushie_bunny_1773800765977.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Osito Morita",
+        "descripcion": "Osito lila súper adorable. Perfecto para dormir.",
+        "precio": 9200,
+        "imagen": "./img/plushie_bear_1773800791282.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Unicornio Arcoíris",
+        "descripcion": "Lleva la magia a tu cuarto con este unicornio brillante.",
+        "precio": 12000,
+        "imagen": "./img/plushie_unicorn_1773800805642.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Dino Menta",
+        "descripcion": "Un dinosaurio amigable al que no le gusta asustar.",
+        "precio": 10500,
+        "imagen": "./img/plushie_dino_1773800829894.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Gatito Sol",
+        "descripcion": "Pequeño gatito amarillo que te alegrará el día.",
+        "precio": 7800,
+        "imagen": "./img/plushie_kitty_1773800844140.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Perrito Nube",
+        "descripcion": "El cachorro más leal y suavecito de todos.",
+        "precio": 8900,
+        "imagen": "./img/plushie_doggy_1773800859784.png"
+    }
+]

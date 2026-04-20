@@ -121,6 +121,36 @@ function restarCantidad(e) {
     renderizarCarrito();
 }
 
+// Selección del botón de finalizar compra
+const btnFinish = document.querySelector("#finish-purchase");
+
+if (btnFinish) {
+    btnFinish.addEventListener("click", () => {
+        // SweetAlert2 para finalizar la compra
+        Swal.fire({
+            title: "¡Gracias por tu compra!",
+            text: "Tus nuevos amigos de peluche están preparándose para el viaje.",
+            icon: "success",
+            confirmButtonText: "¡Qué alegría!",
+            confirmButtonColor: "#ff9a9e",
+            background: "#fff5f5",
+            backdrop: `
+                rgba(255,192,203,0.4)
+                url("../img/confetti.gif")
+                left top
+                no-repeat
+            `
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Vaciar el carrito después de la compra
+                carrito = [];
+                localStorage.setItem("carrito", JSON.stringify(carrito));
+                renderizarCarrito();
+            }
+        });
+    });
+}
+
 // Inicialización
 renderizarCarrito();
 actualizarContadorCarrito();

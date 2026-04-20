@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
 
@@ -81,107 +83,7 @@
         <h2 class="section-title">Nuestros Peluches</h2>
 
         <div class="products-grid">
-            <!-- Product 1 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_bunny_1773800765977.png" alt="Conejo de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Conejito Algodón</h3>
-                    <p>Un conejito rosa y blanco, ideal para abrazos suaves.</p>
-                    <p class="product-price">$8.500</p>
-                    <div class="product-actions" data-product-id="1">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 2 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_bear_1773800791282.png" alt="Oso de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Osito Morita</h3>
-                    <p>Osito lila súper adorable. Perfecto para dormir.</p>
-                    <p class="product-price">$9.200</p>
-                    <div class="product-actions" data-product-id="2">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 3 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_unicorn_1773800805642.png" alt="Unicornio de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Unicornio Arcoíris</h3>
-                    <p>Lleva la magia a tu cuarto con este unicornio brillante.</p>
-                    <p class="product-price">$12.000</p>
-                    <div class="product-actions" data-product-id="3">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 4 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_dino_1773800829894.png" alt="Dinosaurio de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Dino Menta</h3>
-                    <p>Un dinosaurio amigable al que no le gusta asustar.</p>
-                    <p class="product-price">$10.500</p>
-                    <div class="product-actions" data-product-id="4">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 5 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_kitty_1773800844140.png" alt="Gatito de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Gatito Sol</h3>
-                    <p>Pequeño gatito amarillo que te alegrará el día.</p>
-                    <p class="product-price">$7.800</p>
-                    <div class="product-actions" data-product-id="5">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 6 -->
-            <article class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./img/plushie_doggy_1773800859784.png" alt="Perrito de Peluche">
-                </div>
-                <div class="product-info">
-                    <h3>Perrito Nube</h3>
-                    <p>El cachorro más leal y suavecito de todos.</p>
-                    <p class="product-price">$8.900</p>
-                    <div class="product-actions" data-product-id="6">
-                        <button class="quantity-btn minus-btn">-</button>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                        <button class="quantity-btn plus-btn">+</button>
-                    </div>
-                </div>
-            </article>
+            <!-- Los productos se cargan dinámicamente desde el archivo JSON mediante JS -->
         </div>
     </main>
 
@@ -198,6 +100,8 @@
         </div>
     </footer>
 
+    <!-- Script toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- Script that you will develop later in class in JS -->
     <script src="./js/index.js"></script>
 </body>
